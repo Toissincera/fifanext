@@ -2,32 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.headers {
+  font-family: "Nunito";
+  font-size: 4rem;
+  font-weight: 700;
+  color: purple;
+  margin: 2rem;
+  text-align: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.lead {
+  align-items: center;
+  font-family: "Nunito";
+  font-size: 2rem;
+  font-weight: 400;
+  color: crimson;
+  margin: 2rem;
+  text-align: center;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.list {
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito";
+  font-size: 2rem;
+  font-weight: 400;
+  color: orangered;
+  margin: 1rem auto;
+  width: 32rem;
+  justify-self: center;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.listItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 4rem;
+  border: 2px solid gold;
+  border-width: 0px 0px 2px 0px;
+  border-radius: 4rem;
+}
+
+.inputBox {
+  border: 2px solid darkgrey;
+  border-radius: 2rem;
+  margin: 1rem;
+  padding: 1rem 2rem;
+}
+
+.pic {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  border-radius: 2rem;
+  overflow: hidden;
 }
